@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_3ScrollView2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWC-ml-bzm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="WUz-zK-TaH">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WUz-zK-TaH" secondAttribute="trailing" id="4jp-YU-T9g"/>
+                                    <constraint firstAttribute="bottom" secondItem="WUz-zK-TaH" secondAttribute="bottom" id="9En-7X-peD"/>
+                                    <constraint firstItem="WUz-zK-TaH" firstAttribute="centerY" secondItem="iWC-ml-bzm" secondAttribute="centerY" id="XjX-dO-9ax"/>
+                                    <constraint firstItem="WUz-zK-TaH" firstAttribute="leading" secondItem="iWC-ml-bzm" secondAttribute="leading" id="kDA-91-UN0"/>
+                                    <constraint firstItem="WUz-zK-TaH" firstAttribute="centerX" secondItem="iWC-ml-bzm" secondAttribute="centerX" id="oJ1-4L-oMo"/>
+                                    <constraint firstItem="WUz-zK-TaH" firstAttribute="top" secondItem="iWC-ml-bzm" secondAttribute="top" id="vKI-0Y-PaK"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="QNO-4o-hcF"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iWC-ml-bzm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Je3-cx-m3d"/>
+                            <constraint firstItem="iWC-ml-bzm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="d6h-ye-Oji"/>
+                            <constraint firstItem="iWC-ml-bzm" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="z8X-1D-obZ"/>
+                            <constraint firstItem="iWC-ml-bzm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zfj-8I-4gE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgTest" destination="WUz-zK-TaH" id="aVu-26-njI"/>
+                        <outlet property="scrollView" destination="iWC-ml-bzm" id="XjP-nd-yat"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="test" width="140" height="187"/>
+    </resources>
+</document>
